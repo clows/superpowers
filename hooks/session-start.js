@@ -140,7 +140,10 @@ async function main() {
   const output = {
     hookSpecificOutput: {
       hookEventName: 'SessionStart',
-      additionalContext: `<EXTREMELY_IMPORTANT>\nYou have superpowers.\n\n${initMessage}**The content below is from skills/using-skills/SKILL.md - your introduction to using skills:**\n\n${usingSkillsEscaped}\n\n**Tool paths (use these when you need to search for or run skills):**\n- find-skills: ${skillsRoot}/skills/using-skills/find-skills\n- skill-run: ${skillsRoot}/skills/using-skills/skill-run\n\n**Skills live in:** ${skillsRoot}/skills/ (you work on your own branch and can edit any skill)\n\n**Available skills (output of find-skills):**\n\n${findSkillsEscaped}${statusMessage}\n</EXTREMELY_IMPORTANT>`
+      additionalContext: `<EXTREMELY_IMPORTANT>\nYou have superpowers.\n\n${initMessage}**The content below is from skills/using-skills/SKILL.md - your introduction to using skills:**\n\n${usingSkillsEscaped}\n\n**Tool paths (use these when you need to search for or run skills):**\n- find-skills: ${skillsRoot}/skills/using-skills/find-skills.js
+- skill-run: ${skillsRoot}/skills/using-skills/skill-run.js
+
+**Skills live in:** ${skillsRoot}/skills/ (you work on your own branch and can edit any skill)\n\n**Available skills (output of find-skills):**\n\n${findSkillsEscaped}${statusMessage}\n</EXTREMELY_IMPORTANT>`
     }
   };
 
