@@ -52,13 +52,13 @@ If you have an existing installation:
 ### Removed Features
 
 - **Personal superpowers overlay system** - Replaced with git branch workflow
-- **setup-personal-superpowers hook** - Replaced by initialize-skills.sh
+- **setup-personal-superpowers hook** - Replaced by initialize-skills.js
 
 ## New Features
 
 ### Skills Repository Infrastructure
 
-**Automatic Clone & Setup** (`lib/initialize-skills.sh`)
+**Automatic Clone & Setup** (`lib/initialize-skills.js`)
 - Clones obra/superpowers-skills on first run
 - Offers fork creation if GitHub CLI is installed
 - Sets up upstream/origin remotes correctly
@@ -159,7 +159,7 @@ If you have an existing installation:
 ### File Changes
 
 **Added:**
-- `lib/initialize-skills.sh` - Skills repo initialization and auto-update
+- `lib/initialize-skills.js` - Skills repo initialization and auto-update
 - `docs/TESTING-CHECKLIST.md` - Manual testing scenarios
 - `.claude-plugin/marketplace.json` - Local testing config
 
@@ -169,7 +169,7 @@ If you have an existing installation:
 - `hooks/setup-personal-superpowers.sh` - Obsolete
 
 **Modified:**
-- `hooks/session-start.sh` - Use skills from ~/.config/superpowers/skills
+- `hooks/session-start.js` - Use skills from ~/.config/superpowers/skills (ported to JavaScript for cross-platform support)
 - `commands/brainstorm.md` - Updated paths to SUPERPOWERS_SKILLS_ROOT
 - `commands/write-plan.md` - Updated paths to SUPERPOWERS_SKILLS_ROOT
 - `commands/execute-plan.md` - Updated paths to SUPERPOWERS_SKILLS_ROOT
