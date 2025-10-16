@@ -1,0 +1,26 @@
+{
+  "name": "superpowers-plugin",
+  "version": "2.0.4",
+  "description": "Cross-platform superpowers plugin for Claude Code",
+  "type": "module",
+  "author": {
+    "name": "Jesse Vincent",
+    "email": "jesse@fsck.com"
+  },
+  "homepage": "https://github.com/obra/superpowers",
+  "repository": "https://github.com/obra/superpowers",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "skills",
+    "plugin",
+    "cross-platform"
+  ],
+  "dependencies": {
+    "simple-git": "^3.25.0",
+    "prompts": "^2.4.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
